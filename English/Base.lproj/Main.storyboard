@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jne-et-rep">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--英文單字-->
+        <scene sceneID="F5U-rh-O0R">
+            <objects>
+                <viewController id="reZ-HD-8dh" customClass="EnglishViewController" customModule="English" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HU3-UG-zY9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-Qr-DDh">
+                                <rect key="frame" x="20" y="188" width="374" height="51"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW8-Go-4xc">
+                                <rect key="frame" x="20" y="360" width="374" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="4gz-lD-ov5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-pB-5nU">
+                                <rect key="frame" x="93" y="547" width="111.66666666666669" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3TN-kf-nIs"/>
+                                </constraints>
+                                <state key="normal" image="chevron.left.2" catalog="system"/>
+                                <connections>
+                                    <action selector="btPrev:" destination="reZ-HD-8dh" eventType="touchUpInside" id="dZh-Qf-dQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Q-2A-cWi">
+                                <rect key="frame" x="94" y="310" width="109.66666666666669" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="SU7-YY-Zwf"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="speaker.3.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="reZ-HD-8dh" eventType="touchUpInside" id="eM5-jw-9O5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hm-4H-hV4">
+                                <rect key="frame" x="239.33333333333334" y="306" width="96.333333333333343" height="46"/>
+                                <state key="normal" title="Button" image="hand.thumbsup" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                </state>
+                                <state key="selected" image="hand.thumbsup.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="btSave:" destination="reZ-HD-8dh" eventType="touchUpInside" id="6rb-3e-TqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-yQ-LJI">
+                                <rect key="frame" x="263" y="547" width="49" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="bGi-pu-yA5"/>
+                                </constraints>
+                                <state key="normal" image="chevron.right.2" catalog="system"/>
+                                <connections>
+                                    <action selector="btNext:" destination="reZ-HD-8dh" eventType="touchUpInside" id="Jh5-C3-Chr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ホワイトボードのアイコン　19.png" translatesAutoresizingMaskIntoConstraints="NO" id="BqO-To-VTg">
+                                <rect key="frame" x="20" y="85" width="374" height="726"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="top" secondItem="00Q-2A-cWi" secondAttribute="bottom" constant="12" id="08X-Zd-5TV"/>
+                            <constraint firstItem="BqO-To-VTg" firstAttribute="centerY" secondItem="HU3-UG-zY9" secondAttribute="centerY" id="1Ln-gE-i0e"/>
+                            <constraint firstItem="00Q-2A-cWi" firstAttribute="firstBaseline" secondItem="1hm-4H-hV4" secondAttribute="baseline" id="3uu-T9-sgH"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="trailing" secondItem="BqO-To-VTg" secondAttribute="trailing" id="4sn-Hy-ikH"/>
+                            <constraint firstItem="OnP-pB-5nU" firstAttribute="baseline" secondItem="Gca-yQ-LJI" secondAttribute="baseline" id="7c5-kp-pmu"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="leading" secondItem="BqO-To-VTg" secondAttribute="leading" id="D8o-Le-Zfo"/>
+                            <constraint firstItem="00Q-2A-cWi" firstAttribute="top" secondItem="jUk-Qr-DDh" secondAttribute="bottom" constant="71" id="HrD-Pt-ZWC"/>
+                            <constraint firstItem="UJM-iu-31G" firstAttribute="bottom" secondItem="OnP-pB-5nU" secondAttribute="bottom" constant="230" id="P60-AH-CaE"/>
+                            <constraint firstItem="00Q-2A-cWi" firstAttribute="centerX" secondItem="OnP-pB-5nU" secondAttribute="centerX" id="RJj-ea-h1O"/>
+                            <constraint firstItem="OnP-pB-5nU" firstAttribute="top" secondItem="Gca-yQ-LJI" secondAttribute="top" id="Rzk-KU-mWX"/>
+                            <constraint firstItem="00Q-2A-cWi" firstAttribute="leading" secondItem="UJM-iu-31G" secondAttribute="leading" constant="94" id="VVT-xQ-7Zf"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="trailing" secondItem="HU3-UG-zY9" secondAttribute="trailingMargin" id="YXf-iS-IGu"/>
+                            <constraint firstItem="UJM-iu-31G" firstAttribute="bottom" secondItem="BqO-To-VTg" secondAttribute="bottom" constant="2" id="cCE-8P-pBv"/>
+                            <constraint firstItem="OnP-pB-5nU" firstAttribute="leading" secondItem="UJM-iu-31G" secondAttribute="leading" constant="93" id="ebx-c9-dTV"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="trailing" secondItem="jUk-Qr-DDh" secondAttribute="trailing" id="hIq-fR-P03"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="leading" secondItem="HU3-UG-zY9" secondAttribute="leadingMargin" id="kMj-hX-S9O"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="top" secondItem="1hm-4H-hV4" secondAttribute="bottom" constant="8" id="lsD-bj-ZRA"/>
+                            <constraint firstItem="SW8-Go-4xc" firstAttribute="leading" secondItem="jUk-Qr-DDh" secondAttribute="leading" id="ptm-sd-h5B"/>
+                            <constraint firstItem="Gca-yQ-LJI" firstAttribute="centerX" secondItem="1hm-4H-hV4" secondAttribute="centerX" id="u31-Hr-BHn"/>
+                            <constraint firstItem="UJM-iu-31G" firstAttribute="trailing" secondItem="Gca-yQ-LJI" secondAttribute="trailing" constant="102" id="uwa-Kb-QUd"/>
+                            <constraint firstItem="00Q-2A-cWi" firstAttribute="top" secondItem="HU3-UG-zY9" secondAttribute="top" constant="310" id="xbS-Nz-nMH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UJM-iu-31G"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="英文單字" id="X9e-im-21y">
+                        <barButtonItem key="rightBarButtonItem" title="Chinese" id="zJP-VQ-0sx">
+                            <connections>
+                                <segue destination="01p-GY-Y8g" kind="presentation" modalTransitionStyle="flipHorizontal" id="xuL-sO-jPF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveOutlet" destination="1hm-4H-hV4" id="GFh-hd-2c9"/>
+                        <outlet property="sentenceLabel" destination="SW8-Go-4xc" id="7hT-Fl-o8s"/>
+                        <outlet property="vocabularyLabel" destination="jUk-Qr-DDh" id="l8c-5X-oHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-i3-K3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634.7826086956525" y="-343.52678571428572"/>
+        </scene>
+        <!--請選擇A~Z的字母-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="English" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-sU-ItM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="690.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="nD3-Fj-Xts">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="89.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-hX-cti">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nhE-hX-cti" secondAttribute="height" multiplier="1:1" id="iK9-Om-hIA"/>
+                                                </constraints>
+                                                <state key="normal" title="A" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wld-Ra-LRT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-Km-aUV">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89.333333333333329"/>
+                                                <state key="normal" title="B" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqL-Ie-qlU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-H9-JUR">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89.333333333333329"/>
+                                                <state key="normal" title="C" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqD-Ng-kjU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-Vg-Bd8">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89.333333333333329"/>
+                                                <state key="normal" title="D" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xs5-Wm-pEg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="wZm-s6-gTX">
+                                        <rect key="frame" x="0.0" y="100.33333333333334" width="414" height="89"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXR-CR-JMW">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FXR-CR-JMW" secondAttribute="height" multiplier="1:1" id="Evy-FZ-JWt"/>
+                                                </constraints>
+                                                <state key="normal" title="E" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhL-WC-M4A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxy-Qg-Whb">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89"/>
+                                                <state key="normal" title="F" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPX-yd-dHD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-Aa-aAu">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89"/>
+                                                <state key="normal" title="G" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2y4-yY-Wt8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-El-MbJ">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89"/>
+                                                <state key="normal" title="H" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVW-kF-hrb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="P1d-W7-tVw">
+                                        <rect key="frame" x="0.0" y="200.33333333333331" width="414" height="89.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz2-Dd-SPT">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hz2-Dd-SPT" secondAttribute="height" multiplier="1:1" id="jKC-C0-TcM"/>
+                                                </constraints>
+                                                <state key="normal" title="I" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hap-n1-2KS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-W0-V0S">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89.333333333333329"/>
+                                                <state key="normal" title="J" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXt-3Z-KxO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsX-tV-SeM">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89.333333333333329"/>
+                                                <state key="normal" title="K" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjW-Gv-9Te"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBg-xu-Fij">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89.333333333333329"/>
+                                                <state key="normal" title="L" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjT-z6-aQn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-aU-4xV">
+                                        <rect key="frame" x="0.0" y="300.66666666666669" width="414" height="89.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXC-sa-WId">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="OXC-sa-WId" secondAttribute="height" multiplier="1:1" id="sZP-rO-azc"/>
+                                                </constraints>
+                                                <state key="normal" title="M" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fK-Ld-WuK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-oK-yzF">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89.333333333333329"/>
+                                                <state key="normal" title="N" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWs-tV-d7c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UND-bB-Tk2">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89.333333333333329"/>
+                                                <state key="normal" title="O" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2z-X5-Byr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTE-5D-ueC">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89.333333333333329"/>
+                                                <state key="normal" title="P" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRW-Ye-FLc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-UC-i1S">
+                                        <rect key="frame" x="0.0" y="400.66666666666669" width="414" height="89.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0n-CA-Iph">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="V0n-CA-Iph" secondAttribute="height" multiplier="1:1" id="Zfc-8P-wY0"/>
+                                                </constraints>
+                                                <state key="normal" title="Q" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMU-PT-xNd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In7-TS-T2L">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89.333333333333329"/>
+                                                <state key="normal" title="R" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVw-4L-6ue"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUt-pl-VDh">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89.333333333333329"/>
+                                                <state key="normal" title="S" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGh-ip-411"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eec-p3-QTD">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89.333333333333329"/>
+                                                <state key="normal" title="T" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzx-yi-YSX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="3qF-kp-5My">
+                                        <rect key="frame" x="0.0" y="500.99999999999994" width="414" height="89.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-0D-lHE">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="IHC-0D-lHE" secondAttribute="height" multiplier="1:1" id="GBx-gU-lFJ"/>
+                                                </constraints>
+                                                <state key="normal" title="U" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kee-mN-f1a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-gA-v6x">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89.333333333333329"/>
+                                                <state key="normal" title="V" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rdj-Ky-1Vv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1a-tm-zTW">
+                                                <rect key="frame" x="216.66666666666663" y="0.0" width="89" height="89.333333333333329"/>
+                                                <state key="normal" title="W" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYF-lR-L6T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-iL-aqz">
+                                                <rect key="frame" x="324.66666666666669" y="0.0" width="89.333333333333314" height="89.333333333333329"/>
+                                                <state key="normal" title="X" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJ8-6R-IRz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="UIk-El-QuO">
+                                        <rect key="frame" x="0.0" y="601.33333333333337" width="197.66666666666666" height="89"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1I-aE-3vV">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="89"/>
+                                                <state key="normal" title="Y" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TuA-gZ-sFB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdx-KW-oyJ">
+                                                <rect key="frame" x="108.33333333333334" y="0.0" width="89.333333333333343" height="89"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="89" id="ODY-CP-V5X"/>
+                                                </constraints>
+                                                <state key="normal" title="Z" backgroundImage="線画のフォルダアイコン.png"/>
+                                                <connections>
+                                                    <action selector="alphabetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDw-Jh-e17"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wZm-s6-gTX" firstAttribute="width" secondItem="Nm1-sU-ItM" secondAttribute="width" id="Djo-Vm-VLX"/>
+                                    <constraint firstItem="C1I-aE-3vV" firstAttribute="width" secondItem="qIG-iL-aqz" secondAttribute="width" id="gVx-qx-P1D"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JV6-aU-4xV" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="DIa-yi-jU8"/>
+                            <constraint firstItem="Nm1-sU-ItM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mco-NH-dyc"/>
+                            <constraint firstItem="3qF-kp-5My" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="OTx-6a-MMH"/>
+                            <constraint firstItem="nD3-Fj-Xts" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="W8l-AD-W3x"/>
+                            <constraint firstItem="Nm1-sU-ItM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XQp-dK-TTx"/>
+                            <constraint firstItem="xXB-UC-i1S" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="apI-dQ-bIn"/>
+                            <constraint firstAttribute="bottom" secondItem="Nm1-sU-ItM" secondAttribute="bottom" multiplier="1.1" constant="40" id="mfW-Fw-jq3"/>
+                            <constraint firstItem="P1d-W7-tVw" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="vtu-r2-Zp7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="請選擇A~Z的字母" id="LX9-14-f3q"/>
+                    <connections>
+                        <segue destination="reZ-HD-8dh" kind="show" identifier="showDetail" id="B8X-oh-C4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="-344.19642857142856"/>
+        </scene>
+        <!--單字本-->
+        <scene sceneID="5Nv-py-7QN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wPZ-gx-BjX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="單字本" image="book" catalog="system" selectedImage="book.fill" id="UTi-uw-Iod"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mET-xV-Gy5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dbA-xS-rg7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lge-i6-XHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="-344.19642857142856"/>
+        </scene>
+        <!--收藏項目-->
+        <scene sceneID="Zkh-Eb-r86">
+            <objects>
+                <tableViewController id="2vC-J6-qLg" customClass="FavoriteTableViewController" customModule="English" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="EUA-YG-pK9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="Y8d-ar-qE1" detailTextLabel="9mp-na-lbW" style="IBUITableViewCellStyleSubtitle" id="gp7-l9-ztl">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gp7-l9-ztl" id="nv7-WD-ZBh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y8d-ar-qE1">
+                                            <rect key="frame" x="20.000000000000004" y="9.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9mp-na-lbW">
+                                            <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2vC-J6-qLg" id="74m-G2-MAA"/>
+                            <outlet property="delegate" destination="2vC-J6-qLg" id="1JQ-UY-t4i"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="收藏項目" image="hand.thumbsup" catalog="system" selectedImage="hand.thumbsup.fill" id="i2G-H0-MLj"/>
+                    <navigationItem key="navigationItem" id="IZb-mc-pEs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMT-KL-IcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214.4927536231885" y="356.91964285714283"/>
+        </scene>
+        <!--中文翻譯-->
+        <scene sceneID="TXy-0m-3Bc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dGN-Ka-aSe" customClass="ChineseViewController" customModule="English" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeU-Pe-pY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4m-WC-Udn">
+                                <rect key="frame" x="20" y="158" width="374" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-kU-SVn">
+                                <rect key="frame" x="20" y="360" width="374" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ホワイトボードのアイコン　19.png" translatesAutoresizingMaskIntoConstraints="NO" id="KFs-58-aDD">
+                                <rect key="frame" x="20" y="89" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="C5C-cX-UqO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="中文翻譯" id="M0z-xl-dwW">
+                        <barButtonItem key="rightBarButtonItem" title="English" id="dt5-ty-jkG">
+                            <connections>
+                                <segue destination="s1d-oE-JKk" kind="unwind" unwindAction="goToChineseWithSegue:" id="Gb6-se-agZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sentenceLabel" destination="YYh-kU-SVn" id="Fzn-BI-0k6"/>
+                        <outlet property="vocabularyLabel" destination="D4m-WC-Udn" id="qUO-qA-cgK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjR-9e-mnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="s1d-oE-JKk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4271.0144927536239" y="-344.19642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N1f-1z-HyE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="01p-GY-Y8g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lY1-6I-0Ok">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dGN-Ka-aSe" kind="relationship" relationship="rootViewController" id="vQq-zk-jML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbm-BP-eqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3466.666666666667" y="-344.19642857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sL5-Dd-7ns">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jne-et-rep" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L0e-zP-R2A">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wPZ-gx-BjX" kind="relationship" relationship="viewControllers" id="OmK-SN-o5a"/>
+                        <segue destination="2vC-J6-qLg" kind="relationship" relationship="viewControllers" id="Yl7-18-A8P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bge-He-mUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="-344.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
+        <image name="chevron.left.2" catalog="system" width="64" height="52"/>
+        <image name="chevron.right.2" catalog="system" width="64" height="52"/>
+        <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="64" height="62"/>
+        <image name="speaker.3.fill" catalog="system" width="64" height="44"/>
+        <image name="ホワイトボードのアイコン　19.png" width="512" height="512"/>
+        <image name="線画のフォルダアイコン.png" width="64" height="64"/>
+    </resources>
+</document>
