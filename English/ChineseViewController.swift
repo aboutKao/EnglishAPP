@@ -41,7 +41,7 @@ class ChineseViewController: UIViewController {
         
     }
     
-    //顯示英文單字與句子
+    //顯示中文單字與句子
     func showChinese(){
         //取得對應字母的單字的第幾項
         //承接全域變數(lines)
