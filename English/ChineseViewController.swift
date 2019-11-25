@@ -45,12 +45,12 @@ class ChineseViewController: UIViewController {
     func showChinese(){
         //取得對應字母的單字的第幾項
         //承接全域變數(lines)
-        let line = lines[index]
+//        let line = lines[index]
         
         //再進行切割
-        let  array = line.components(separatedBy: "\t")
-        vocabularyLabel.text = array[1]
-        sentenceLabel.text =  array[3]
+//        let  array = line.components(separatedBy: "\t")
+        vocabularyLabel.text = vocabulary
+        sentenceLabel.text =  sentence
     }
     
    
